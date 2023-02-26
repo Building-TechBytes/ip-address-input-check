@@ -10,11 +10,11 @@ def validate_ip_address(ip_string):
 
 def valid_ip(prompt):
     while True:
-        lan_ip=validate_ip_address(input(f"{prompt}:"))
-        if lan_ip == "invalid":
+        ip=validate_ip_address(input(f"{prompt}:"))
+        if ip == "invalid":
             print("Enter a valid IPv4!")
         else:
-            return lan_ip
+            return ip
             break
             
 lan_user_ip=valid_ip("Enter user int IP")
